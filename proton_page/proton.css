@@ -1420,9 +1420,10 @@ body {
     color: #fff;
 }
 
-.headingg {
+.headings {
     padding-left: 3vh;
     font-size: 3rem;
+    font-weight: 600;
 }
 /* second page css starts */
 /* ========== SECOND PAGE (SLIDER) ========== */
