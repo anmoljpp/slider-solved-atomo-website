@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const slideGap = 15;
 
         // Sample data for slides
+        // Sample data for slides
         const slidesData = [
             {
                 image: '/proton_page/Frame.svg',
@@ -211,48 +212,48 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Why It Was Created?',
-                description: 'To deliver a powerful, secure, and future-ready smart home hub that goes beyond basic automation.'
+                title: 'Why It Exists?',
+                description: 'Designed to modernize industries by enabling local AI decision-making without relying on cloud infrastructure, Electron ensures faster, more secure, and uninterrupted operations even in remote or disconnected environments.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: "Who It's For",
-                description: 'Designed for smart homeowners, home automation integrators, and builders who want deep customization and robust control.'
+                title: "Who It's For?",
+                description: 'Ideal for system integrators, automation engineers, and industrial IoT solution providers aiming to build intelligent, resilient systems with enhanced performance, reliability, and scalability at the edge.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Lives at the Heart of the Home',
-                description: 'Proton acts as the intelligent core, connecting and orchestrating devices, sensors, scenes, and routines in real-time.'
+                title: 'Built for Harsh Realities!',
+                description: 'PElectron excels in real-world environments - from remote farms to factory floors and power stations - delivering reliable edge intelligence wherever it is needed most.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Engineered for Performance',
-                description: 'With dedicated compute power and smart scheduling, it manages complex automation with low latency and high reliability.'
+                title: 'Not Just a Device – A Platform!',
+                description: 'Electron is built to perform in the toughest environments-be it remote farms, factory floors, or power stations-ensuring dependable edge computing wherever it is deployed.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Personalized Control',
-                description: 'From voice to app to AI-generated routines - Proton adapts to your lifestyle and preferences.'
+                title: 'Powers Smarter Operations',
+                description: 'It empowers machines to communicate, predict potential issues, and optimize performance autonomously-directly at the edge, without relying on the cloud.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Built for the Smart Home of Tomorrow',
-                description: 'Future-proofed with support for Matter, Thread, Zigbee, and more - ready for the next wave of connected devices.'
+                title: 'Your First Step into Industry 4.0!',
+                description: 'Electron serves as a gateway to modern industrial practices, seamlessly bridging legacy systems with future-ready, intelligent infrastructure.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Security First, Always',
-                description: 'Local processing and secure architecture ensure your home stays private and protected.'
+                title: 'Easy to Integrate, Hard to Replace',
+                description: 'Electron integrates effortlessly into existing systems-and once it is there, it becomes an indispensable part of operations, redefining efficiency and control.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Works Seamlessly with Atomo Devices',
-                description: 'Integrates tightly with Neutron and Electron for a unified home-and-industry experience.'
+                title: 'Part of a Bigger Family',
+                description: 'Electron works seamlessly with Atomo’s Neutron (Home) and Proton (Pro Home) systems, creating a unified ecosystem that powers comprehensive smart environments across residential and industrial settings.'
             },
             {
                 image: '/proton_page/Frame.svg',
-                title: 'Elegantly Indian, Globally Capable',
-                description: 'Developed in India with international compatibility - Proton reflects modern living across continents.'
+                title: 'Designed in India, Made for the World!',
+                description: 'A proudly Indian innovation, Electron is designed to empower industries both locally and globally, combining robust engineering with a vision for worldwide impact.'
             }
         ];
 
@@ -276,8 +277,8 @@ document.addEventListener('DOMContentLoaded', function () {
         function getVisibleSlidesCount() {
             const containerWidth = slidesContainer.parentElement.offsetWidth;
             const slideWidth = window.innerWidth <= 480 ? containerWidth :
-                             window.innerWidth <= 768 ? (containerWidth / 2) :
-                             window.innerWidth <= 1200 ? 300 : 357;
+                window.innerWidth <= 768 ? (containerWidth / 2) :
+                    window.innerWidth <= 1200 ? 300 : 357;
             const totalWidthPerSlide = slideWidth + slideGap;
             return Math.floor(containerWidth / totalWidthPerSlide) || 1;
         }

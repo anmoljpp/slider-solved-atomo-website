@@ -204,58 +204,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Sample data for slides
         const slidesData = [
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'What Is Proton?',
-                description: 'Proton is Atomo Innovation’s advanced smart home controller built for tech-savvy users, prosumers, and premium automation setups.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Why It Was Created?',
-                description: 'To deliver a powerful, secure, and future-ready smart home hub that goes beyond basic automation.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: "Who It's For",
-                description: 'Designed for smart homeowners, home automation integrators, and builders who want deep customization and robust control.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Lives at the Heart of the Home',
-                description: 'Proton acts as the intelligent core, connecting and orchestrating devices, sensors, scenes, and routines in real-time.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Engineered for Performance',
-                description: 'With dedicated compute power and smart scheduling, it manages complex automation with low latency and high reliability.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Personalized Control',
-                description: 'From voice to app to AI-generated routines - Proton adapts to your lifestyle and preferences.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Built for the Smart Home of Tomorrow',
-                description: 'Future-proofed with support for Matter, Thread, Zigbee, and more - ready for the next wave of connected devices.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Security First, Always',
-                description: 'Local processing and secure architecture ensure your home stays private and protected.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Works Seamlessly with Atomo Devices',
-                description: 'Integrates tightly with Neutron and Electron for a unified home-and-industry experience.'
-            },
-            {
-                image: '/proton_page/Frame.svg',
-                title: 'Elegantly Indian, Globally Capable',
-                description: 'Developed in India with international compatibility - Proton reflects modern living across continents.'
-            }
-        ];
-
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "What Is Proton?",
+                  description: "Proton is Atomo Innovation’s advanced smart home controller designed for tech-savvy users, prosumers, and premium automation setups. It offers seamless integration, powerful performance, and complete control over modern smart environments."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Why It Was Created",
+                  description: "To deliver a powerful, secure, and future-ready smart home hub that goes beyond basic automation, enabling intelligent control, personalization, and scalability for evolving user needs."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Who It's For",
+                  description: "Designed for smart homeowners, home automation integrators, and builders seeking deep customization, robust control, and a seamless connected living experience."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Lives at the Heart of the Home",
+                  description: "Proton serves as the intelligent core of the smart home, seamlessly connecting and orchestrating devices, sensors, scenes, and routines in real-time. It ensures responsive automation and a unified user experience."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Engineered for Performance",
+                  description: "With dedicated compute power and intelligent scheduling, Proton handles complex automation tasks with low latency and high reliability, ensuring smooth and efficient smart home operations."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Personalized Control",
+                  description: "From voice commands to mobile apps to AI-generated routines, Proton seamlessly adapts to your lifestyle and preferences, delivering a truly personalized smart home experience."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Built for the Smart Home of Tomorrow",
+                  description: "Future-proofed with support for Matter, Thread, Zigbee, and more, Proton is ready to integrate with the next wave of connected devices, ensuring long-term compatibility and flexibility."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Security First, Always",
+                  description: "With local processing and a secure architecture, Proton keeps your smart home private, protected, and resilient—even without constant cloud connectivity."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Works Seamlessly with Atomo Devices",
+                  description: "Proton integrates seamlessly with Neutron and Electron, delivering a unified experience across home and industrial automation for streamlined control and efficiency."
+                },
+                {
+                  image: "/proton_page/Frame.svg",
+                  title: "Elegantly Indian, Globally Capable",
+                  description: "Developed in India with global standards in mind, Proton ensures international compatibility, reflecting the needs of modern living across continents."
+                }
+              ];
+              
         // Create slides
         slidesData.forEach((slide, index) => {
             const slideElement = document.createElement('div');
