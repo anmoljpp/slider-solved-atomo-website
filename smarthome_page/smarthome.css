@@ -1,198 +1,192 @@
-/* Third Page - App Compatibility Section */
-#third-page {
+/* ========== Hero Section ========== */
+.hero-section {
     position: relative;
-    width: 100%;
+    width: 90%;
+    min-height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px;
-    box-sizing: border-box;
-    min-height: 85vh;
-    height: auto;
-    overflow-x: hidden;
-    background-color: rgb(248 248 248);
+    padding: 80px;
+    background-color: transparent;
+    z-index: 10;
 }
 
-.app-compatibility-container {
-    width: 100%;
-    max-width: 1200px;
+.hero-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 90%;
+    /* max-width: 1200px; */
 }
 
-.app-compatibility-content {
-    text-align: center;
-    max-width: 800px;
-    margin-bottom: 60px;
-}
-
-.app-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.app-text {
-    font-size: 20px;
-    color: #555;
-    line-height: 1.6;
+.hero-headline {
+    color: #3c3c3c;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin: 0;
 }
 
-.phone-grid {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    gap: 20px;
-    padding: 20px 0;
-    width: 100%;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    user-select: none;
-    touch-action: pan-x;
-    cursor: grab;
-}
-
-.phone-grid::-webkit-scrollbar {
-    display: none;
-}
-
-.phone-grid:active {
-    cursor: grabbing;
-}
-
-.phone-item img {
-    width: 700%;
-    height: auto;
-object-fit: contain;
-border-radius: 10px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .app-title {
-        font-size: 2.2rem;
-    }
-
-    .app-text {
-        font-size: 1rem;
-    }
-
-    .phone-grid {
-        gap: 15px;
-    }
-
-    .phone-item {
-        min-width: 180px;
-        max-width: 250px;
-    }
+.hero-quote {
+    color: #3c3c3c;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-align: right;
+    padding-top: 14px;
 }
 
 @media (max-width: 768px) {
-    #third-page {
-        padding: 60px 20px;
+    .hero-section {
+        padding: 15px;
+        min-height: 100px;
     }
 
-    .app-title {
-        font-size: 2rem;
+    .hero-content {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
 
-    .app-text {
-        font-size: 1rem;
+    .hero-headline {
+        font-size: 2.5rem;
+        text-align: center;
     }
 
-    .phone-item {
-        min-width: 150px;
-        max-width: 200px;
+    .hero-quote {
+        font-size: 1.125rem;
+        text-align: center;
     }
 }
+
+@media (max-width: 1024px) {
+    .hero-headline {
+        font-size: 3.125rem;
+    }
+
+    .hero-quote {
+        font-size: 1.25rem;
+    }
+}
+
 
 @media (max-width: 480px) {
-    #third-page {
-        padding: 50px 15px;
+    .hero-headline {
+        font-size: 3rem;
     }
 
-    .app-title {
-        font-size: 1.7rem;
-    }
-
-    .app-text {
-        font-size: 0.9rem;
-    }
-
-    .phone-grid {
-        gap: 10px;
-    }
-
-    .phone-item {
-        min-width: 120px;
-        max-width: 150px;
+    .hero-quote {
+        font-size: 1.5rem;
     }
 }
 
+
+
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .devices-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .devices-right {
+        order: -1;
+        /* Moves devices-right to the top */
+        text-align: center;
+        margin-bottom: 20px;
+        /* Space between devices-right and smart-home-section */
+    }
+
+    #smart-home-section {
+        width: 100%;
+    }
+
+    .devices-description {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .devices-tagline {
+        font-size: 20px;
+    }
+
+    .devices-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
 .spec-labels {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .spec-label-list {
-list-style: none;
-padding: 0;
-margin-top: 293px;
-display: flex;
-flex-direction: column;
-gap: 15px;
-align-items: flex-start; /* Align items to the start for consistent icon positioning */
+    list-style: none;
+    padding: 0;
+    margin-top: 293px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    /* Align items to the start for consistent icon positioning */
 }
 
 .spec-label-list li {
-display: flex;
-align-items: center;
-font-size: 1rem;
-color: #333;
-margin: 0;
-width: 100%; /* Ensure all list items take the same width for alignment */
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    width: 100%;
+    /* Ensure all list items take the same width for alignment */
 }
 
 .spec-icon {
-display: inline-block;
-width: 24px;
-height: 24px;
-margin-right: 10px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-flex-shrink: 0; /* Prevent the icon from shrinking */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    /* Prevent the icon from shrinking */
 }
 
 /* Ensure the img inside spec-icon is properly sized */
 .spec-icon img {
-width: 24px;
-height: 24px;
-vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 /* ========== COLOR PALETTE ========== */
 :root {
-    --primary-color: #2b6cb0; /* Professional blue */
-    --secondary-color: #1a4971; /* Darker blue for hover */
-    --accent-color: #68d391; /* Green accent for highlights */
-    --text-dark: #1a202c; /* Near-black for text */
-    --text-light: #f7fafc; /* Off-white for light backgrounds */
-    --background-dark: #1a202c; /* Dark background for navbar/footer */
-    --background-light: #edf2f7; /* Light background for sections */
-    --gradient-start: #e2e8f0; /* Soft gradient start */
-    --gradient-end: #f7fafc; /* Soft gradient end */
+    --primary-color: #2b6cb0;
+    /* Professional blue */
+    --secondary-color: #1a4971;
+    /* Darker blue for hover */
+    --accent-color: #68d391;
+    /* Green accent for highlights */
+    --text-dark: #1a202c;
+    /* Near-black for text */
+    --text-light: #f7fafc;
+    /* Off-white for light backgrounds */
+    --background-dark: #1a202c;
+    /* Dark background for navbar/footer */
+    --background-light: #edf2f7;
+    /* Light background for sections */
+    --gradient-start: #e2e8f0;
+    /* Soft gradient start */
+    --gradient-end: #f7fafc;
+    /* Soft gradient end */
 }
 
 /* ========== BASE STYLES ========== */
@@ -240,6 +234,7 @@ body {
 .scrolled #logo {
     display: block;
 }
+
 /* ========== LOGO STYLES ========== */
 .navbar-logo {
     position: relative;
@@ -247,7 +242,8 @@ body {
     left: 0;
     height: 32px;
     display: flex;
-    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%); /* Approximates #181818 */
+    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%);
+    /* Approximates #181818 */
     align-items: center;
 }
 
@@ -255,7 +251,8 @@ body {
     height: 100%;
     width: auto;
     transition: transform 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%); /* Approximates #181818 */
+    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%);
+    /* Approximates #181818 */
 }
 
 .navbar-logo img:hover {
@@ -270,7 +267,8 @@ body {
     display: none;
     z-index: 102;
     transition: transform 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%); /* Approximates #181818 */
+    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(748%) hue-rotate(177deg) brightness(94%) contrast(93%);
+    /* Approximates #181818 */
 }
 
 .logo1:hover {
@@ -459,6 +457,7 @@ body {
         color: #181818;
     }
 }
+
 /* ========== HAMBURGER MENU ========== */
 #hamburger {
     display: none;
@@ -556,8 +555,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 176%;
-    max-width: 1640px;
+    width: 100vw;
+    max-width: 100vw;
     margin: 60px auto 0;
     padding: 0 40px;
     box-sizing: border-box;
@@ -567,8 +566,8 @@ body {
 /* Smart Home Content */
 .smart-home-content {
     flex: 1;
-    max-width: 500px;
-    text-align: left;
+    max-width: 40vw;
+    text-align: center;
     padding-right: 40px;
     z-index: 2;
 }
@@ -580,6 +579,13 @@ body {
     margin-bottom: 30px;
     letter-spacing: -1px;
     line-height: 1.1;
+}
+
+
+
+.atomic-os-section {
+    width: 31vw;
+    padding-bottom: 18%;
 }
 
 .atomic-os-section h2 {
@@ -602,8 +608,9 @@ body {
 .atomic-os-section .quote {
     font-size: 2.2rem;
     color: #666;
-    font-style: italic;
-    margin-bottom: 30px;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-left: 2vw;
 }
 
 /* Smart Home Image */
@@ -617,8 +624,8 @@ body {
 }
 
 .smart-home-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 55vw;
+    height: 62vh;
     object-fit: contain;
     position: absolute;
     right: 0;
@@ -638,17 +645,18 @@ body {
     margin-top: 3vh;
 }
 
-#second-page {
+/* modified */
+/* #second-page {
     position: relative;
     width: 100%;
-    min-height: 53vh;
+    min-height: 100vh;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 
 /* Second Page - Devices Section */
@@ -656,9 +664,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 80px 40px;
     box-sizing: border-box;
@@ -676,26 +683,16 @@ body {
     box-sizing: border-box;
     background-color: transparent;
     flex: 1;
-    max-width: 62%;
+    max-width: 56%;
     margin: 0;
     padding: 0;
 }
 
-#smart-home-section .devices-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    max-width: 100%;
-    margin: 68px;
-    padding: 0;
-    box-sizing: border-box;
-    gap: 11px;
-}
+
 
 device-item {
     position: relative;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -712,358 +709,134 @@ device-item {
     width: 69px;
     height: 72px;
     object-fit: contain;
-    margin-bottom: 13px;
+    margin-bottom: 29px;
     margin-left: 13px;
 }
 
 .devices-right {
     flex: 1;
     max-width: 40%;
-    margin-top: 103px;
-    text-align: center;
+    text-align: left;
 }
 
 .devices-title {
-    font-size: 2rem;
+    font-size: 3.2rem;
+    text-align: center;
     font-weight: 600;
     color: #000;
-    font-family: sans-serif;
-    margin-bottom: 40px;
     line-height: 1.4;
 }
 
 .devices-tagline {
-    font-size: 1.8rem;
+    font-size: 4rem;
     font-weight: 600;
-    font-family: sans-serif;
     color: #000;
     margin-bottom: 20px;
-    font-style: italic;
+    font-style: normal;
+    line-height: 1.2;
 }
 
 .devices-text {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     color: #555;
     line-height: 1.6;
 }
 
 
-/* Third Page - App Compatibility Section */
-#third-page {
+#smart-home-section {
     position: relative;
     width: 100%;
+    min-height: auto;
+    height: auto;
     display: flex;
     justify-content: center;
-    background-color: rgb(248 248 248);
     align-items: center;
-    padding: 80px 20px;
     box-sizing: border-box;
-    min-height: 85vh;
-    height: auto;
-    overflow-x: hidden;
-}
-.phone-grid {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Add to your existing CSS */
-.phone-grid, 
-#smart-home-section .devices-container,
-.app-grid {
-    overflow-x: auto;
-    margin-top: -58px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-}
-
-.phone-grid::-webkit-scrollbar, 
-#smart-home-section .devices-container::-webkit-scrollbar,
-.app-grid::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome/Safari */
-}
-
-
-/* Prevent text selection while dragging */
-.phone-grid, 
-#smart-home-section .devices-container,
-.app-grid {
-    user-select: none;
-}
-
-.phone-grid {
-    display: flex;
-    gap: 228px;
-}
-
-.phone-item {
+    background-color: transparent;
     flex: 1;
-    min-width: 200px;
-    max-width: 393px;
-    text-align: center;
-    padding: 20px;
-    margin-left: 7vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 56%;
+    margin: 0;
+    padding: 0;
 }
 
-.app-compatibility-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+#smart-home-section .devices-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 25vw;
     max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    box-sizing: border-box;
-    min-height: 85vh;
-    height: auto;
-    overflow-x: hidden;
-}
-
- 
-.app-compatibility-content {
-    text-align: center;
-    max-width: 800px;
-    margin-bottom: 60px;
-}
-
-.app-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.app-text {
-    font-size: 20px;
-    color: #555;
-    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 20px;
 }
-/* Fourth Page - Device Compatibility Section */
-#fourth-page {
+
+.device-item {
     position: relative;
-    width: 100%;
-    min-height: 85vh;
-    height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
     box-sizing: border-box;
-    background-color: rgb(255 255 255);
-    overflow-x: hidden;
-}
-/* Fourth Page - Device Compatibility Section */
-.device-compatibility-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* padding: 80px 20px; */
-    /* box-sizing: border-box; */
-    text-align: center;
 }
 
-.device-compatibility-content {
-    margin-bottom: 60px;
+.device-item:hover {
+    transform: translateY(-5px);
 }
 
-.device-compatibility-content h2 {
-    font-size: 2.5rem;
+.device-item.grey {
+    background-color: #d3d3d3;
+}
+
+/* custom added start */
+.device-item.grey .device-icon {
+    /* Add styles for the "off" state, if needed */
+    opacity: 0.5;
+}
+
+.device-item .device-icon {
+    /* Add styles for the "on" state, if needed */
+    opacity: 1;
+}
+
+/* custom added end */
+
+
+
+.device-item img.device-icon {
+    width: 69px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 29px;
+    margin-left: 13px;
+}
+
+.device-item p {
+    font-size: 1.3rem;
+    color: #333;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.device-compatibility-content .tagline {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.device-comparison {
-    display: flex;
-    justify-content: center;
-    gap: 54px;
-    margin-top: -54px;
-    flex-wrap: wrap;
-    align-items: stretch; /* Ensures cards stretch to the same height */
-}
-
-.device-card {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    background-color: #fff;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.device-card h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0 0 20px 0;
-    text-align: center;
-}
-
-.device-specs {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-left: 225px;
-    width: 100%;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.device-specs li {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    margin-left: -8vh;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.spec-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.spec-labels {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.spec-label-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 293px;
-    display: flex;
-    font-weight: 500;
-    flex-direction: column;
-    gap: 27px;
-    align-items: center;
-}
-
-.spec-label-list li {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    color: #333;
     margin: 0;
+    text-align: center;
 }
 
-.spec-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.status-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 36px;
+    cursor: pointer;
 }
 
-/* Use actual icons or SVGs if available; these are placeholders */
-.spec-icon.cpu::before { content: "🖥️"; }
-.spec-icon.ram::before { content: "📏"; }
-.spec-icon.storage::before { content: "💾"; }
-.spec-icon.power::before { content: "🔌"; }
-.spec-icon.ethernet::before { content: "🌐"; }
-.spec-icon.wifi::before { content: "📶"; }
-.spec-icon.bluetooth::before { content: "🎧"; }
-.spec-icon.zigbee::before { content: "🔗"; }
-.spec-icon.matter::before { content: "✨"; }
-.spec-icon.thread::before { content: "🧵"; }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .device-compatibility-content h2 {
-        font-size: 2.2rem;
-    }
 
-    .device-compatibility-content .tagline {
-        font-size: 1rem;
-    }
 
-    .device-card {
-        min-width: 280px;
-    }
-}
-
-@media (max-width: 768px) {
-    .device-compatibility-container {
-        padding: 60px 15px;
-    }
-
-    .device-compatibility-content h2 {
-        font-size: 2rem;
-    }
-
-    .device-compatibility-content .tagline {
-        font-size: 0.9rem;
-    }
-
-    .device-comparison {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .device-card {
-        min-width: 100%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .device-compatibility-content h2 {
-        font-size: 1.7rem;
-    }
-
-    .device-compatibility-content .tagline {
-        font-size: 0.85rem;
-    }
-
-    .device-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .device-specs li {
-        font-size: 0.9rem;
-    }
-
-    .device-icon-placeholder {
-        width: 60px;
-        height: 60px;
-    }
-
-    .device-icon-placeholder::before {
-        font-size: 30px;
-    }
-}
+/* Fourth Page - Device Compatibility Section */
 
 /* Fifth Page - Graph Section */
 #fifth-page {
@@ -1114,7 +887,7 @@ device-item {
 .graph-image-container {
     width: 87%;
     max-width: 775px;
-     border-radius: 12px;
+    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -1130,11 +903,11 @@ device-item {
     .graph-content h2 {
         font-size: 2.2rem;
     }
-    
+
     .graph-subtitle {
         font-size: 1rem;
     }
-    
+
     .graph-image-container {
         max-width: 800px;
     }
@@ -1143,32 +916,34 @@ device-item {
 @media (max-width: 768px) {
     #fifth-page {
         padding: 60px 20px;
+        height: 70vh;
     }
-    
+
     .graph-content {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
-    
+
     .graph-content h2 {
         font-size: 2rem;
     }
-    
+
     .graph-image-container {
-        max-width: 100%;
+        max-width: 100vw;
     }
+    
 }
 
 @media (max-width: 480px) {
     .graph-content h2 {
         font-size: 1.7rem;
     }
-    
+
     .graph-subtitle {
         font-size: 0.9rem;
     }
-    
+
     #fifth-page {
-        padding: 50px 15px;
+        padding: 16px 0px;
     }
 }
 
@@ -1189,15 +964,15 @@ device-item {
 }
 
 
-.app-grid{
+.app-grid {
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(275px, 0fr));
-        gap: 26px;
-        width: 100%;
-        max-width: 740px;
-        position: relative;
-        left: 55%;
-        bottom: 177px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 0fr));
+    gap: 26px;
+    width: 100%;
+    max-width: 740px;
+    position: relative;
+    left: 55%;
+    bottom: 177px;
 }
 
 .app-icon1 {
@@ -1229,174 +1004,21 @@ device-item {
 .app-icon4 {
     border-radius: 10px;
     position: relative;
-    height: 400px;
-    top: 100px;
+    height: 377px;
+    top: 83px;
     width: 294px;
 
 }
 
-.app-store-title{
+.app-store-title {
     font-size: 46px;
-    width: 120%;
+    width: 90%;
 }
 
 .app-store-desc {
     font-size: 20px;
-    width: 154%;
+    width: 70%;
 }
-
-/* Seventh Page - Energy Insights Section */
-#seventh-page {
-    position: relative;
-    width: 100%;
-    min-height: 85vh;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    overflow-x: hidden;
-}
-
-.energy-insights-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-.energy-insights-content {
-    flex: 1;
-    max-width: 500px;
-    text-align: left;
-    margin-left: -87px;
-}
-
-.insights-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-.insights-subtitle {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.insights-desc {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.energy-insights-slider {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-left: 220px;
-    height: 50vh;
-}
-
-.slider-container {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust as needed */
-    overflow: hidden;
-}
-
-.slider-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.slider-item.active {
-    opacity: 1;
-}
-
-.video-slide,
-.slideshow-slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.insights-video {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.slideshow {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slideshow-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.slideshow-image.active {
-    opacity: 1;
-}
-
-.slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.dot.active {
-    background-color: var(--accent-color);
-    transform: scale(1.2);
-}
-
-.dot:hover {
-    background-color: #555;
-    transform: scale(1.1);
-}
-
 
 /* Eight page modified section started */
 
@@ -1414,7 +1036,7 @@ device-item {
     overflow-x: hidden;
 }
 
-#eighth-page > div {
+#eighth-page>div {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -1428,7 +1050,8 @@ device-item {
 .socket-container {
     flex: 1;
     max-width: 50%;
-    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    aspect-ratio: 1 / 1;
+    /* Maintain square aspect ratio */
     position: relative;
     display: flex;
     align-items: center;
@@ -1453,12 +1076,12 @@ device-item {
 /* Plug Styles */
 .plug {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 118%;
+    height: 89%;
     cursor: pointer;
     z-index: 10;
-    top: 50%;
-    left: 50%;
+    top: 51%;
+    left: 51%;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease;
 }
@@ -1470,11 +1093,13 @@ device-item {
 }
 
 .plugged-in {
-    transform: translate(-50%, -50%) translateX(-20%); /* Adjust for plugging in */
+    transform: translate(-43%, -49%) translateX(-20%);
+    /* Adjust for plugging in */
 }
 
 .plugged-out {
-    transform: translate(-50%, -50%) translateX(-60%); /* Adjust for unplugged state */
+    transform: translate(-50%, -50%) translateX(-60%);
+    /* Adjust for unplugged state */
 }
 
 /* Graph Section */
@@ -1488,10 +1113,10 @@ device-item {
 /* Mobile Mockup Styles */
 .mobile-mockup {
     position: relative;
-    width: 290px;
-    height: 600px;
+    width: 250px;
+    height: 480px;
     background-color: #ffffff;
-    border: 10px solid #757575;
+    border: 10px solid #3c3c3c;
     border-radius: 40px;
     box-shadow: 0 10px 70px rgba(0, 0, 0, 0.466);
     overflow: hidden;
@@ -1504,12 +1129,12 @@ device-item {
 .mobile-mockup::before {
     content: '';
     position: absolute;
-    top: 10px;
+    top: -16px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
-    height: 30px;
-    background-color: #757575;
+    width: 143px;
+    height: 42px;
+    background-color: #3c3c3c;
     border-radius: 15px;
 }
 
@@ -1552,7 +1177,7 @@ device-item {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    #eighth-page > div {
+    #eighth-page>div {
         gap: 30px;
     }
 
@@ -1575,7 +1200,7 @@ device-item {
 }
 
 @media (max-width: 768px) {
-    #eighth-page > div {
+    #eighth-page>div {
         flex-direction: column;
         gap: 20px;
     }
@@ -1681,14 +1306,14 @@ device-item {
 
 .unified-interface-container {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1545px;
-        margin: 0 auto;
-        padding: 0 40px;
-        box-sizing: border-box;
-    }
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1545px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
 
 
 .unified-interface-content {
@@ -1786,28 +1411,15 @@ device-item {
         max-width: 100%;
         max-height: 100%;
     }
-     #eight-page {
-            height: 162vh;
-    }
 }
 
 @media (max-width: 480px) {
-   
-    .unified-interface-desc {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-    margin-bottom: 2px;
-}
     #ninth-page {
         padding: 50px 15px;
     }
 
     .unified-interface-title {
         font-size: 1.7rem;
-                margin-bottom: -27vh;
-
     }
 
     .unified-interface-desc {
@@ -1818,6 +1430,7 @@ device-item {
         height: 40vh;
     }
 }
+
 /* Tenth Page - Family Sharing Section */
 #tenth-page {
     position: relative;
@@ -2051,6 +1664,7 @@ device-item {
         font-size: 1.7rem;
     }
 }
+
 /* Eleventh Page - Footer */
 #eleventh-page {
     width: 100%;
@@ -2060,6 +1674,7 @@ device-item {
     position: relative;
     margin-top: 10px;
 }
+
 #footer {
     max-width: 1280px;
     margin: 0 auto;
@@ -2098,6 +1713,7 @@ device-item {
     flex-wrap: wrap;
     gap: 48px;
 }
+
 /* ========== RESPONSIVE DESIGN FOR FOOTER ========== */
 @media (max-width: 1024px) {
     #sixth-page {
@@ -2228,6 +1844,7 @@ device-item {
         font-size: 0.75rem;
     }
 }
+
 .social-link {
     display: inline-block;
     transition: transform 0.3s ease;
@@ -2287,19 +1904,19 @@ device-item {
     .smart-home-container {
         padding: 0 30px;
     }
-    
+
     .smart-home-content {
         padding-right: 20px;
     }
-    
+
     .smart-home-content h1 {
         font-size: 3.5rem;
     }
-    
+
     .atomic-os-section h2 {
         font-size: 2.2rem;
     }
-    
+
     .smart-home-image {
         max-width: 90%;
     }
@@ -2319,12 +1936,12 @@ device-item {
         flex-direction: column;
         gap: 40px;
     }
-    
+
     .devices-right {
         max-width: 100%;
         text-align: center;
     }
-    
+
     .devices-title {
         margin-bottom: 30px;
     }
@@ -2332,7 +1949,7 @@ device-item {
     .app-screenshots {
         gap: 20px;
     }
-    
+
     .screenshot-item {
         min-width: 180px;
         max-width: 250px;
@@ -2382,41 +1999,41 @@ device-item {
     .privacy-tagline {
         font-size: 2.8rem;
     }
-    
+
     .privacy-features {
         gap: 30px;
     }
-    
+
     .feature-number-circle {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
     }
-    
+
     .feature-title {
         font-size: 1.3rem;
     }
-    
+
     .family-members {
         gap: 40px;
     }
 
-  
+
 }
 
 @media (max-width: 992px) {
     .smart-home-content {
         max-width: 400px;
     }
-    
+
     .smart-home-content h1 {
         font-size: 3rem;
     }
-    
+
     .atomic-os-section h2 {
         font-size: 2rem;
     }
-    
+
     .atomic-os-section .tagline {
         font-size: 1.3rem;
     }
@@ -2493,27 +2110,27 @@ device-item {
         min-height: 90vh;
         padding: 80px 0;
     }
-    
+
     .smart-home-container {
         flex-direction: column;
         height: auto;
         padding: 0 20px;
         margin-top: 40px;
     }
-    
+
     .smart-home-content {
         max-width: 100%;
         padding-right: 0;
         margin-bottom: 40px;
         text-align: center;
     }
-    
+
     .smart-home-image-container {
         width: 100%;
         height: 50vh;
         margin-top: 20px;
     }
-    
+
     .smart-home-image {
         position: relative;
         max-width: 100%;
@@ -2523,20 +2140,20 @@ device-item {
     .devices-container {
         padding: 60px 30px;
     }
-    
+
     .devices-row {
         gap: 20px;
     }
-    
+
     .device-item img {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
     }
-    
+
     .devices-title {
         font-size: 1.7rem;
     }
-    
+
     .devices-tagline {
         font-size: 1.5rem;
     }
@@ -2544,15 +2161,15 @@ device-item {
     .app-compatibility-container {
         padding: 60px 20px;
     }
-    
+
     .app-title {
         font-size: 2rem;
     }
-    
+
     .app-text {
         font-size: 1rem;
     }
-    
+
     .screenshot-item {
         min-width: 150px;
         max-width: 200px;
@@ -2636,27 +2253,27 @@ device-item {
     .privacy-tagline {
         font-size: 2.2rem;
     }
-    
+
     .privacy-features {
         flex-direction: column;
         align-items: center;
         gap: 50px;
         margin-bottom: 60px;
     }
-    
+
     .privacy-feature {
         max-width: 100%;
     }
-    
+
     .family-title {
         font-size: 1.3rem;
     }
-    
+
     .family-members {
         gap: 30px;
     }
 
-   
+
 
     .link-group {
         min-width: 140px;
@@ -2667,19 +2284,19 @@ device-item {
     .smart-home-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .atomic-os-section h2 {
         font-size: 1.8rem;
     }
-    
+
     .atomic-os-section .tagline {
         font-size: 1.1rem;
     }
-    
+
     .atomic-os-section .quote {
         font-size: 1rem;
     }
-    
+
     .smart-home-image-container {
         height: 40vh;
     }
@@ -2689,59 +2306,81 @@ device-item {
     .smart-home-content h1 {
         font-size: 2.2rem;
     }
-    
-    .atomic-os-section h2 {
-        font-size: 1.5rem;
+
+    /* 
+    .smart-home-image-container {
+        height: 456vh;
+    } */
+
+    .device-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
     }
 
-    .devices-container {
-        padding: 50px 20px;
-        gap: 30px;
+    .smart-home-image {
+        width: 100vw;
+        height: 27vh;
+        /* object-fit: contain;
+        position: absolute; */
+        right: 0;
     }
-    
-    .devices-row {
-        gap: 15px;
-    }
-    
-    .device-item img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .device-item p {
-        font-size: 0.9rem;
-    }
-    
-    .devices-title {
+
+
+    .atomic-os-section h2 {
         font-size: 1.5rem;
-        margin-bottom: 20px;
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 100%;
+        color: #333;
+        /* margin-bottom: 15px; */
+        line-height: 1.2;
     }
-    
-    .devices-tagline {
-        font-size: 1.3rem;
+
+
+
+
+    .atomic-os-section {
+        width: 85vw;
+        padding-bottom: 18%;
     }
-    
-    .devices-text {
-        font-size: 1rem;
+
+    .atomic-os-section .quote {
+        font-size: 1.5rem;
+        color: #666;
+        font-style: normal;
+        margin-bottom: 0px;
+        margin-left: 2vw;
     }
+
 
     .app-compatibility-container {
         padding: 50px 15px;
     }
-    
+
     .app-title {
         font-size: 1.7rem;
     }
-    
+
     .app-text {
         font-size: 0.9rem;
     }
-    
+
     .app-screenshots {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .screenshot-item {
         min-width: 100%;
         max-width: 100%;
@@ -2783,7 +2422,6 @@ device-item {
 
     .text-content .subtitle {
         font-size: 0.85rem;
-                padding-bottom: 24vh;
     }
 
     .graph-container {
@@ -2793,69 +2431,419 @@ device-item {
     .privacy-tagline {
         font-size: 1.8rem;
     }
-    
+
     .feature-number-circle {
         width: 45px;
         height: 45px;
         font-size: 1.3rem;
     }
-    
+
     .family-members {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .member {
         margin-bottom: 15px;
     }
 
-   
+
     .link-group {
         min-width: 100%;
     }
 }
 
+
+
+
+
+
+/* Seventh Page - Energy Insights Section */
+#seventh-page {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.energy-insights-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.energy-insights-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.insights-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.insights-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.insights-desc {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.energy-insights-slider {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50vh;
+    margin-left: 20px;
+}
+
+.energy-slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+.video-slide,
+.slideshow-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insights-video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slideshow-image.active {
+    opacity: 1;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    height: 2vh;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dot.active {
+    background-color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #seventh-page {
+        padding: 40px 16px;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .energy-insights-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 600px;
+        height: 70vh;
+        padding: 0 15px;
+    }
+
+    .energy-insights-content {
+        order: 1;
+        margin-bottom: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .energy-insights-slider {
+        order: 2;
+        width: 100%;
+        height: 40vh;
+        margin-left: 0;
+    }
+
+    .insights-title {
+        font-size: 2rem;
+    }
+
+    .insights-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .insights-desc {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 480px) {
-    #ninth-page {
-        padding: 40px 15px; /* Slightly reduce padding for smaller screens */
-        min-height: 70vh; /* Reduce min-height to fit smaller screens better */
+    #seventh-page {
+        padding: 30px 10px;
     }
 
-    .unified-interface-container {
-        flex-direction: column; /* Already set at 768px, ensuring it remains */
-        padding: 0 10px; /* Reduce padding for tighter fit on small screens */
-        gap: 20px; /* Add gap between stacked elements */
+    .energy-insights-slider {
+        height: 30vh;
     }
 
-    .unified-interface-content {
-        max-width: 100%; /* Ensure full width */
-        padding-right: 0; /* Remove padding to maximize space */
-        margin-bottom: 20px; /* Adjust margin for better spacing */
-        text-align: center; /* Center-align text for better readability */
+    .insights-title {
+        font-size: 1.7rem;
     }
 
-    .unified-interface-title {
-        font-size: 1.5rem; /* Slightly smaller font size for better fit */
-        width: 100%; /* Reset width to fit container */
-        left: 0; /* Reset positioning */
-        bottom: 0; /* Reset positioning */
-        margin-bottom: 10px; /* Adjust spacing below title */
-        position: relative; /* Ensure proper stacking */
+    .insights-subtitle {
+        font-size: 1.3rem;
     }
 
-    .unified-interface-desc {
-        font-size: 0.85rem; /* Smaller font size for better readability */
-        line-height: 1.5; /* Adjust line height for better text flow */
-        margin-bottom: 20px; /* Reduce margin to fit content better */
+    .insights-desc {
+        font-size: 0.9rem;
     }
 
-    .unified-interface-image-container {
-        height: 30vh; /* Reduce height to fit smaller screens */
-        width: 100%; /* Ensure full width */
+    .slider-dots {
+        margin-top: 15px;
+        gap: 8px;
     }
 
-    .unified-interface-image {
-        max-width: 90%; /* Slightly reduce max-width to avoid overflow */
-        max-height: 100%; /* Ensure image fits within container */
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Third Page - App Compatibility Section */
+#third-page {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    box-sizing: border-box;
+    min-height: 85vh;
+    height: auto;
+    overflow-x: hidden;
+    background-color: rgb(248 248 248);
+}
+
+.app-compatibility-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.app-compatibility-content {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.app-text {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.phone-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    user-select: none;
+    touch-action: pan-x;
+    cursor: grab;
+}
+
+.phone-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.phone-grid:active {
+    cursor: grabbing;
+}
+
+.phone-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 393px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 7vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-item img {
+    width: 90vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .app-title {
+        font-size: 2.2rem;
+    }
+
+    .app-text {
+        font-size: 1rem;
+    }
+
+    .phone-grid {
+        gap: 15px;
+    }
+
+    .phone-item {
+        min-width: 180px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #third-page {
+        padding: 60px 20px;
+    }
+
+    .app-title {
+        font-size: 2rem;
+    }
+
+    .app-text {
+        font-size: 1rem;
+    }
+
+    .phone-item {
+        min-width: 150px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #third-page {
+        padding-top: 59px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .app-title {
+        font-size: 1.7rem;
+    }
+
+    .app-text {
+        font-size: 0.9rem;
+    }
+
+    .phone-grid {
+        gap: 100px;
+    }
+
+    .phone-item {
+        min-width: 120px;
+        max-width: 150px;
     }
 }

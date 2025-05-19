@@ -1,0 +1,308 @@
+
+<section id="second-page">
+   <div class="slider-container2">
+            <div class="features-slider-container1">
+                <div class="features-slider2">
+                    <!-- Feature Box 1 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Performance Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">What Is Proton? </h3>
+                        <p class="feature-desc2">Proton is Atomo Innovation’s advanced smart home controller built for tech-savvy users, prosumers, and premium automation setups.</p>
+                    </div>
+
+                    <!-- Feature Box 2 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="AI Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Why It Was Created?</h3>
+                        <p class="feature-desc2">To deliver a powerful, secure, and future-ready smart home hub that goes beyond basic automation.</p>
+                    </div>
+
+                    <!-- Feature Box 3 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Memory Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Who It's For</h3>
+                        <p class="feature-desc2">Designed for smart homeowners, home automation integrators, and builders who want deep customization and robust control.</p>
+                    </div>
+
+                    <!-- Feature Box 4 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Storage Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Lives at the Heart of the Home</h3>
+                        <p class="feature-desc2">Proton acts as the intelligent core, connecting and orchestrating devices, sensors, scenes, and routines in real-time.</p>
+                    </div>
+
+                    <!-- Feature Box 5 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Power Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Engineered for Performance</h3>
+                        <p class="feature-desc2">With dedicated compute power and smart scheduling, it manages complex automation with low latency and high reliability.</p>
+                    </div>
+
+                    <!-- Feature Box 6 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Connectivity Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Personalized Control</h3>
+                        <p class="feature-desc2">From voice to app to AI-generated routines - Proton adapts to your lifestyle and preferences.</p>
+                    </div>
+
+                    <!-- Feature Box 7 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="WiFi Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Built for the Smart Home of Tomorrow</h3>
+                        <p class="feature-desc2">Future-proofed with support for Matter, Thread, Zigbee, and more - ready for the next wave of connected devices.</p>
+                    </div>
+
+                    <!-- Feature Box 8 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Bluetooth Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Security First, Always</h3>
+                        <p class="feature-desc2">Local processing and secure architecture ensure your home stays private and protected.</p>
+                    </div>
+
+                    <!-- Feature Box 9 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Smart Home Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Works Seamlessly with Atomo Devices</h3>
+                        <p class="feature-desc2">Integrates tightly with Neutron and Electron for a unified home-and-industry experience.</p>
+                    </div>
+
+                    <!-- Feature Box 10 -->
+                    <div class="feature-slide2">
+                        <!-- <div class="feature-icon2"> -->
+                            <!-- <img src="/Atomo - primary (1) 1.svg" alt="Future Proof Icon"> -->
+                        <!-- </div> -->
+                        <h3 class="feature-title2">Elegantly Indian, Globally Capable</h3>
+                        <p class="feature-desc2">Developed in India with international compatibility - Proton reflects modern living across continents.</p>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls-container1">
+                    <div class="slider-controls">
+                        <button class="round-button prev-feature">❮</button>
+                        <button class="round-button next-feature">❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+const slidesData = [
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'What Is Proton?',
+        description: 'Proton is Atomo Innovation’s advanced smart home controller built for tech-savvy users, prosumers, and premium automation setups. It brings cutting-edge intelligence to your everyday smart living.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Why It Was Created?',
+        description: 'To deliver a powerful, secure, and future-ready smart home hub that goes beyond basic automation. Created to meet the demands of evolving smart environments.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: "Who It's For",
+        description: 'Designed for smart homeowners, home automation integrators, and builders who want deep customization and robust control. Ideal for those who demand more from technology.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Lives at the Heart of the Home',
+        description: 'Proton acts as the intelligent core, connecting and orchestrating devices, sensors, scenes, and routines in real-time. It ensures your home works in perfect harmony.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Engineered for Performance',
+        description: 'With dedicated compute power and smart scheduling, it manages complex automation with low latency and high reliability. Performance you can trust around the clock.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Personalized Control',
+        description: 'From voice to app to AI-generated routines - Proton adapts to your lifestyle and preferences. Your smart home evolves naturally with your habits.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Built for the Smart Home of Tomorrow',
+        description: 'Future-proofed with support for Matter, Thread, Zigbee, and more - ready for the next wave of connected devices. It grows with tomorrow’s innovations today.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Security First, Always',
+        description: 'Local processing and secure architecture ensure your home stays private and protected. Safety and privacy are baked into every layer of Proton.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Works Seamlessly with Atomo Devices',
+        description: 'Integrates tightly with Neutron and Electron for a unified home-and-industry experience. Enjoy a fully synchronized and scalable automation ecosystem.'
+    },
+    {
+        image: '/proton_page/Frame.svg',
+        title: 'Elegantly Indian, Globally Capable',
+        description: 'Developed in India with international compatibility - Proton reflects modern living across continents. A proud innovation that speaks every smart language.'
+    }
+];
+
+
+
+
+
+const Slidedata = [
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'What Is Neutron?',
+        description: 'Neutron is Atomo Innovation’s entry-level smart home controller - simple, efficient, and built for everyday homes. A great fit for practical and streamlined smart living.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Why It Exists?',
+        description: 'To make smart living accessible to everyone by offering essential automation at an affordable price. Smart technology made simple and reachable for all homes.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: "Who It's For?",
+        description: 'Perfect for first-time users, renters, compact homes, and those who want plug-and-play automation. A friendly start to anyone's smart home journey.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Designed for Daily Comfort.',
+        description: 'Handles daily tasks like lighting, fan control, remote switching, and basic sensor automation with ease. Everyday convenience made smarter and more consistent.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Intuitive by Nature',
+        description: 'Simple app interface and easy setup ensure users of all ages can operate Neutron without technical skills. No manuals needed – just tap and go.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Works Quietly in the Background.',
+        description: 'Neutron blends into your lifestyle - no fuss, just smart control that runs smoothly. Always there, quietly managing your home routines.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Smart Enough, Without the Complexity',
+        description: 'Offers just the right amount of intelligence to automate your home without being overwhelming. Balanced automation that respects your space and time.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Future-Ready Starter Kit',
+        description: 'A gateway into the Atomo ecosystem - start with Neutron and upgrade to Proton or Electron as your needs grow. Begin small, grow smartly over time.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Affordable Doesn’t Mean Basic',
+        description: 'Despite its price, Neutron supports key protocols like WiFi, BLE, RF, and IR. Reliable tech support without cutting down on capabilities.'
+    },
+    {
+        image: '/Atomo - primary (1) 1.svg',
+        title: 'Built in India for Indian Homes',
+        description: 'Tailored to Indian power systems, appliance types, and lifestyles - proudly made for local needs. Designed with real Indian household challenges in mind.'
+    }
+];
+
+
+
+Electron
+
+const ElectronSlideData = [
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "What Is Electron?",
+    description: "Electron is Atomo Innovation’s industrial-grade edge computing platform, engineered to bring intelligence to the edge of operations."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Why It Exists?",
+    description: "Designed to modernize industries by enabling local AI decision-making without depending on cloud infrastructure."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Who It's For?",
+    description: "Ideal for system integrators, automation engineers, and industrial IoT solution providers looking to build smart, resilient systems."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Built for Harsh Realities!",
+    description: "Electron thrives in the field - whether it's a remote farm, a factory floor, or a power station."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Not Just a Device – A Platform!",
+    description: "Electron thrives in the field - whether it's a remote farm, a factory floor, or a power station."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Powers Smarter Operations",
+    description: "It helps machines talk, predict issues, and optimize performance autonomously at the edge."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Your First Step into Industry 4.0!",
+    description: "Electron is a gateway to modern industrial practices, bridging legacy systems with future-ready intelligence."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Easy to Integrate, Hard to Replace",
+    description: "Electron fits right into existing setups, but once it’s in place, you’ll wonder how things worked without it."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Part of a Bigger Family",
+    description: "Works hand-in-hand with Atomo’s Neutron (home) and Proton (pro home) systems to enable full-spectrum smart environments."
+  },
+  {
+    image: "/Atomo - primary (1) 1.svg",
+    title: "Designed in India, Made for the World!",
+    description: "A proudly Indian innovation aimed at empowering industries both locally and globally."
+  }
+];
+
+
+
+
+Introduction to relational databases, MySQL; install MySQL, connect Python using `mysql-connector-python`; write SQL queries (SELECT, INSERT, UPDATE, DELETE); perform CRUD operations on a table (e.g., users); handle database connection errors; explore SQL joins.
+,Introduction to NoSQL, MongoDB; install MongoDB, connect Python using `pymongo`; perform operations: insert, find, update, delete documents; store/retrieve data (e.g., user profiles); explore MongoDB queries (e.g., filtering by field); handle connection issues.
+Mini Project: API with Database,Build a Flask API integrated with MySQL or MongoDB (e.g., task manager API); implement CRUD endpoints (create, read, update, delete tasks); store data in database; test API with Postman; document endpoints; ensure proper error handling and data validation.
+Django Setup and URL Mapping,Introduction to Django: features, MVC vs. MVT architecture; install Django in virtual environment; create project/apps; define URL patterns in urls.py; write function-based views to return HTTP responses; create a simple webpage with multiple routes (e.g., home, about).
+Templates and Static Files,Learn Django template system: render HTML templates, template inheritance; use template tags/filters; manage static files (CSS, JavaScript, images); build a styled webpage with navigation bar; test template rendering; explore template debugging techniques.
+Django Models and Migrations,Define Django models: fields (CharField, IntegerField), relationships (ForeignKey, ManyToMany); create migrations, apply to database; build blog models (e.g., Post, Category); inspect generated database schema; handle migration conflicts.
+Database and Admin Interface,Configure database (SQLite default, optional MySQL); create superuser; register models in admin.py; customize admin interface (list display, filters); manage blog data via admin panel; explore admin permissions and user management.
+Forms and Admin Customization,Create Django forms for user input; use model forms to generate forms from models; handle POST requests, form validation; customize admin further (search fields, inline editing); build forms for creating/editing blog posts; test form submissions.
+Mini Project: Django Blog App,Build a blog app: features include post creation, listing, editing; use models, views, templates, admin interface; implement basic styling with CSS; test CRUD functionality; push code to GitHub; document app features in README.
+Session and Cookies,Configure session middleware in Django; store/retrieve session data (e.g., user preferences); set/retrieve cookies; implement a simple login system with session-based authentication; test session persistence and cookie handling; explore security considerations.
+Sending Emails,Configure email backend (e.g., SMTP with Gmail); send emails for password reset, notifications; integrate email into blog app (e.g., notify users of new posts); test email delivery; handle email errors; explore email templates for customization.
+Django Signals and Views,Learn Django signals (pre_save, post_save); implement signals to log model changes (e.g., post creation); use generic views (ListView, DetailView) and class-based views; refactor blog app to use generic views for listing/editing posts; test signal functionality.
+Report Generation,Use `reportlab` to generate PDF reports in Django; create a dynamic report of blog posts (e.g., summary of posts by category); customize report layout (fonts, tables); integrate report generation into blog app; test PDF download functionality.
+Django REST Framework,Install Django REST Framework (DRF); create serializers for models; build API endpoints for blog posts (list, create, retrieve); implement authentication in DRF; test endpoints with Postman; document API using DRF’s browsable API interface.
+Final Project: Django App,Build a complete Django app (e.g., task manager or e-commerce platform); implement features: user authentication, CRUD operations, REST API, email notifications, PDF reports; design database schema; integrate front-end styling; document project structure.
+Final Project Continued,Continue Django project: finalize features, test all functionalities (CRUD, API, emails); ensure robust error handling; complete documentation (setup instructions, API docs); deploy app locally; push code to GitHub with detailed README.
+Presentation Prep and Portfolio,Prepare project presentations (5–10 min each); structure slides (problem, solution, features); set up GitHub portfolio with project README; discuss job applications, resume building, open-source contributions; practice presenting to peers.
+Presentation Day and Next Steps,Present final projects to group; receive feedback from instructor/peers; discuss strengths, areas for improvement; guidance on GitHub profiles, job applications, open-source projects; share project links; finalize portfolio setup.
+Final Wrap-Up,Combined session with AI/ML batch; reflect on training experience; discuss career paths in AI/ML and web development; share success stories; distribute remaining certificates; encourage continued collaboration via GitHub or LinkedIn.

@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 image: '/proton_page/Frame.svg',
                 title: 'What Is Proton?',
-                description: 'Electron is Atomo Innovation’s industrial-grade edge computing platform, designed to bring advanced intelligence and real-time decision-making to the edge of industrial operations. It empowers businesses with faster data processing, enhanced automation, and seamless system integration.'
+                description: 'Electron is Atomo Innovation’s industrial-grade edge computing platform, designed to bring advanced intelligence and real-time decision-making to the edge of industrial operations. It empowers businesses with faster data processing, and seamless system integration.'
             },
             {
                 image: '/proton_page/Frame.svg',
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slideElement.innerHTML = `
                 <img src="${slide.image}" alt="${slide.title}" class="slide-img">
                 <div class="slide-content">
-                    <h3 class="text-2xl font-bold mb-2">${slide.title}</h3>
+                    <h3 class="text-2xl font-bold mb-2 pb-[50px]">${slide.title}</h3>
                     <p class="text-base">${slide.description}</p>
                 </div>
             `;
@@ -355,3 +355,19 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeFourthPageSlider();
     initializeSecondPageSlider();
 });
+
+
+function moveSlides() {
+    const slideWidth = updateSlideWidths();
+    const offset = currentPosition * (slideWidth + slideGap);
+    slidesContainer.style.transform = `translateX(-${offset}px)`;
+    updateButtons();
+
+    // Dynamically adjust shadow for centered slides
+    slides.forEach((slide, index) => {
+        const isCentered = index >= currentPosition && index < currentPosition + getVisibleSlidesCount();
+        slide.style.boxShadow = isCentered
+            ? '0 8px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1)'
+            : '0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05)';
+    });
+}
